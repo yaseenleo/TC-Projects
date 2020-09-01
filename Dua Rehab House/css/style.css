@@ -1,0 +1,1727 @@
+:root {
+    --lightColor: rgba(225, 235, 243, 0.767);
+    --darkBlue: #0f263e;
+    --blue: #4183c2;
+    --white: rgb(255, 255, 255);
+    --muli: 'Muli', Helvetica, Arial, Lucida, sans-serif;
+}
+
+body {
+    font-family: var(--muli);
+}
+
+.flex-center {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.verticle-line {
+    -webkit-columns: 2 150px;
+    -moz-columns: 2 150px;
+    columns: 2 150px;
+    -webkit-column-gap: 5em;
+    -moz-column-gap: 5em;
+    column-gap: 5em;
+    -webkit-column-rule-width: 4px;
+    -moz-column-rule-width: 4px;
+    column-rule-width: 4px;
+    -webkit-column-rule-color: #4f5e86;
+    -moz-column-rule-color: #4f5e86;
+    column-rule-color: #4f5e86;
+    margin: 0.2em auto 2em;
+  }
+  
+  .verticle-line-dotted {
+    -webkit-column-rule-style: dotted;
+    -moz-column-rule-style: dotted;
+    column-rule-style: dotted;
+  }
+  
+  .verticle-line-dashed {
+    -webkit-column-rule-style: dashed;
+    -moz-column-rule-style: dashed;
+    column-rule-style: dashed;
+  }
+  
+  .verticle-line-solid {
+    -webkit-column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    column-rule-style: solid;
+  }
+
+.line-25 {
+    background-color: var(--darkBlue);
+    width: 25%;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.line-90{
+    width: 90%;
+    background-color: var(--darkBlue);
+
+}
+
+
+/* Home Page Start */
+
+/* navbar section */
+
+#header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.4s;
+    z-index: 3;
+}
+
+.navbar {
+    background: #222222;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: var(--blue);
+    transition: 0.2s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--blue);
+}
+
+.nav-link {
+    padding: 15px 5px;
+    transition: 0.2s;
+}
+
+.dropdown-item{
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #212529;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background: var(--blue);
+}
+
+/* .dropdown-menu.show{
+    position: relative;
+    display: block;
+    max-width: 197px;
+    min-width: 197px;
+} */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .navbar-brand img{
+        width: 150px;
+        height: 100;
+    }
+}
+
+/* slider section */
+
+.swiper-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    margin-top: 7em !important;
+}
+
+.swiper-slide {
+    position: relative;
+    display: block;
+    z-index: -1;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.slide-text-area {
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 10%;
+    background-color: var(--lightColor);
+    min-height: 313px;
+    max-height: 313px;
+    min-width: 512px;
+    max-width: 512px;
+    border-radius: 1%;
+}
+
+.slide-text {
+    position: relative;
+    display: block;
+    color: var(--darkBlue);
+    margin: 2em;
+}
+
+.swiper-button {
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .slide-text-area{
+        max-width: 80%;
+        min-width: 60%;
+        margin-top: 0em;
+        top: 20%;
+    }
+    .slider-one h1{
+        font-size: 2em;
+    }
+    .slider-one h2{
+        font-size: 1.5em;
+    }
+
+    .slider-two h2{
+        font-size: 1.5em;
+        font-weight: 600;
+
+    }
+    .slider-two h2:nth-child(2){
+        font-size: 1.2em ;
+    }
+    .slider-two h3{
+        font-size: 1em;
+    }
+    .slider-three h2{
+        font-size: 1.5em;
+        letter-spacing: 3px;
+ }
+}
+
+/* Header section */
+
+.header-social {
+    background-color: var(--blue);
+    color: white;
+}
+
+.layer-stretch {
+    position: relative;
+    max-width: 1170px;
+    padding: 7px 15px;
+    overflow: hidden;
+    text-align: right;
+    font-size: 14px;
+    color: inherit;
+}
+
+.hdr-top-block {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+.hdr-top-block a {
+    color: white;
+}
+
+.hdr-top-line {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: #DDD;
+}
+
+.hdr-social-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hdr-social-list li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Objective Section */
+
+.objective-section {
+    background-color: var(--darkBlue);
+    color: white;
+    text-align: center;
+}
+
+.objective-text {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.objective-text span {
+    font-weight: 200;
+    text-transform: initial;
+}
+
+.objective-text>h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.objective-text h4 {
+    font-size: 120%;
+    font-weight: 400;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .objective-text {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .objective-text h2{
+        font-size: 1.3em;
+        text-align: justify;
+        padding-bottom: 0.5em;
+        font-weight: 600;
+        line-height: 1.3em;
+    }
+
+    .objective-text h4{
+        text-align: justify;
+        font-size: 1em;
+    }
+ }
+
+
+/* Stats Section */
+
+.stats-section {
+    background: url("../../images/dua-house_stats.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+    z-index: -1;
+    color: white;
+    position: relative;
+    display: block;
+}
+
+.stats-text {
+    padding-left: 2em;
+    padding-right: 5em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+.stats-text>h3 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* service section */
+
+.service-container {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.service-header>h2 {
+    font-size: 2em;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.service-area>h4 {
+    font-size: 1.2em;
+    font-weight: 200;
+    color: #0f263e;
+}
+
+.service-area h4>strong {
+    font-weight: 600;
+}
+
+.service-image>img {
+    border: 5px solid var(--darkBlue);
+    border-radius: 5px;
+}
+
+.service-icon-container {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+}
+
+.service-icon {
+    position: relative;
+    width: 64px !important;
+    height: 64px;
+    line-height: 64px;
+    font-size: 16px !important;
+    text-align: center;
+    color: #FFF;
+    background: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.service-icon::after {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    width: 130%;
+    height: 130%;
+    border: 2px solid var(--darkBlue);
+    border-radius: 2px;
+    z-index: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.service-icon:hover {
+    border: 2px solid var(--darkBlue);
+}
+
+.wrimagecard {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    position: relative;
+    background: #fff;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.wrimagecard .fa {
+    position: relative;
+    font-size: 70px;
+}
+
+.wrimagecard-topimage_header {
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+a.wrimagecard:hover,
+.wrimagecard-topimage:hover {
+    box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+}
+
+.wrimagecard-topimage a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.wrimagecard-topimage_title {
+    padding: 20px 24px;
+    height: 80px;
+    padding-bottom: 0.75rem;
+    position: relative;
+}
+
+.wrimagecard-topimage_title>h5 {
+    font-size: 1em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.wrimagecard-topimage a {
+    border-bottom: none;
+    text-decoration: none;
+    color: #525c65;
+    transition: color 0.3s ease;
+}
+
+.stats-bottom {
+    background-color: rgba(30, 131, 193, 0.75) !important;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 2em;
+}
+
+.stats-bottom h3 {
+    font-size: 1.5em;
+}
+
+.stats-bottom span {
+    font-size: 1.2em;
+}
+
+.stats-bottom .text-right {
+    color: gold;
+}
+
+
+/* Composure Section */
+
+.composure-section{
+    position: relative;
+    display: block;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.composure-heading > h3{
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--blue);
+}
+
+.composure-section img {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.composure-section .card-title {
+    text-align: center;
+    color: var(--blue);
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.composure-section .card-text{
+    text-align: justify;
+    color: var(--darkBlue);
+    font-size: 14px;
+}
+
+/* Home Page End */
+
+/* About Page Start */
+.about-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 650px; */
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.about-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    /* padding: 2em; */
+    text-align: center;
+}
+
+.about-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.about-banner-text h3{
+    text-align: center;
+    font-size: 1em;
+}
+
+.about-section-heading{
+    margin-top: 2em;
+    margin-bottom: 1.2em;
+}
+
+.about-section h2{
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.about-section h3{
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: initial;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--darkBlue);
+}
+
+.about-section h4{
+    font-size: 1em;
+    text-align: justify;
+    color: var(--darkBlue);
+
+}
+/* Ways Section */
+.ways-section{
+    position: relative;
+    display: block;
+    margin-top: 2em;
+    background-color: rgb(221, 226, 223);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.ways-section h2{
+    color: var(--blue);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 2.3em;
+}
+
+.ways-section h3{
+    color: var(--blue);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.ways-section p {
+    color: var(--darkBlue);
+}
+
+.ways-image img{
+    border: 0.3em solid var(--darkBlue);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .ways-sub-container{
+        flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+    }
+
+    .ways-sub-text-container{
+        margin-top: 1em;
+    }
+ }
+
+
+/* About Page End */
+/* ==================================================================================== */
+
+/* Philosophy Page Start */
+
+.philosophy-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 650px; */
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.philosophy-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    /* padding: 2em; */
+    text-align: center;
+}
+
+.philosophy-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.philosophy-section{
+    background-color: rgb(100, 172, 190);
+    color: white;
+    padding: 3em;
+}
+
+.philosophy-container{
+    background: #4291A4;
+    box-shadow: -5px 3px 22px 1px #3B45FF;
+    -webkit-box-shadow: -5px 3px 22px 1px #3B45FF; 
+    padding: 1em;
+}
+
+.philosophy-container h2{
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    -ms-text-underline-position: under;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.Philosophy-text > p{
+    font-size: 1.2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.Philosophy-text{
+    padding: 1.5em;
+}
+
+.eos-section{
+    color: var(--darkBlue);
+    margin-bottom: 3em;
+}
+
+.eos-heading{
+    text-align: center;
+    color: var(--blue);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+    text-underline-position: under;
+    -ms-text-underline-position: under;
+    line-height: inherit;
+}
+
+.phil-success-section .card-img-top{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.phil-success-container .card-title{
+    text-align: center;
+    color: var(--blue);
+    font-size: large;
+}
+
+.phil-success-container .card-text{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.phil-purpose-section h3{
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: rgb(37, 36, 36);
+    text-align: center;
+}
+
+.phil-purpose-section li{
+    font-size: 14px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .Philosophy-text{
+        padding: 0.5em;
+    }
+
+    .Philosophy-text > p{
+        font-size: 1.2em;
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+    }
+
+    .philosophy-section{
+        padding-top: 3em;
+        padding-bottom: 3em;
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+    }
+
+    .eos-heading{
+        font-size: 1.5em;
+    }
+
+    .phil-purpose-section h3{
+        font-size: 1.1em;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .phil-purpose-section h3{
+        font-size: 1.6em;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+ }
+/* Philosophy Page End */
+
+/* Counciling Page Start */
+.council-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 650px; */
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.council-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    /* padding: 2em; */
+    text-align: center;
+}
+
+.council-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.council-section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.council-container h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--blue);
+    margin-bottom: 0.5em;
+}
+
+.council-container p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Counciling Page End */
+
+/* Program Page Start */
+.program-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.program-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.program-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.program-section{
+    background-color: rgb(63, 159, 197);
+    color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.program-header h2{
+    font-size: 2.5em;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.program-header p{
+    font-size: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.program-purpose{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.program-purpose-heading h3, .program-alcohol h3
+,.purpose-tradition h3{
+    text-align: center;
+    color: var(--blue);
+    font-size: 1.8em;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-transform: uppercase;
+    margin-bottom: 0.7em;
+}
+.program-purpose-text{
+    font-size: 1.3em;
+    line-height: 130%;
+}
+.program-purpose-bottom-text{
+    text-align: center;
+}
+.program-purpose-bottom-text p{
+    font-weight: 600;
+}
+
+.purpose-tradition{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.purpose-tradition p{
+    text-align: center;
+    font-size: 1.3em;
+}
+/* Program Page End */
+
+/* Addiction Resources Page Start */
+.ar-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.ar-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.ar-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+.ar-section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.ar-section h3
+,.ar-types h3, .ar-effect-heading{
+    text-align: center;
+    color: var(--blue);
+    font-size: 1.8em;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-transform: uppercase;
+    margin-bottom: 0.7em;
+    line-height: 1.5em;
+}
+.ar-medicine-section{
+    background-color: rgb(99, 193, 230);
+    color: white;
+    padding-top: 3em;
+    padding-bottom: 1.7em;
+}
+.ar-medicine{
+    margin-bottom: 2em;
+}
+.ar-medicine h4{
+    text-align: center;
+    font-size: 1.8em;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-transform: uppercase;
+    margin-bottom: 0.7em;
+    line-height: 1.5em;
+}
+.ar-medicine h5{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.ar-medicine p{
+    margin-top: 1em;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.ar-types-section{
+    padding-top: 2em;
+}
+
+.ar-line{
+    -webkit-columns: 3 150px;
+    -moz-columns: 3 150px;
+    columns: 3 150px;
+    -webkit-column-gap: 5em;
+    -moz-column-gap: 5em;
+    column-gap: 5em;
+    -webkit-column-rule-width: 4px;
+    -moz-column-rule-width: 4px;
+    column-rule-width: 4px;
+    -webkit-column-rule-color: #4f5e86;
+    -moz-column-rule-color: #4f5e86;
+    column-rule-color: #4f5e86;
+    margin: 0.2em auto 2em;
+}
+
+  .ar-line-dotted {
+    -webkit-column-rule-style: dotted;
+    -moz-column-rule-style: dotted;
+    column-rule-style: dotted;
+  }
+  
+  .ar-line-dashed {
+    -webkit-column-rule-style: dashed;
+    -moz-column-rule-style: dashed;
+    column-rule-style: dashed;
+  }
+  
+  .ar-line-solid {
+    -webkit-column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    column-rule-style: solid;
+  }
+.ar-effect-section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .ar-medicine h4{
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
+    .ar-types h3{
+        font-size: 1.6em;
+        font-weight: 500;
+    }
+
+    .ar-effect-heading h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+ }
+/* Addiction Resources Page End */
+
+/* Treatment Resources Page Start */
+.treatment-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 650px; */
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.treatment-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    /* padding: 2em; */
+    text-align: center;
+}
+
+.treatment-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.treatment-header, .treatment-heading, 
+.treatment-list-heading{
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: var(--blue);
+}
+.treatment-header h3, .treatment-heading h3, 
+.treatment-list-heading h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    padding-bottom: 0.5em;
+}
+
+.treatment-header h4{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-top: 1.3em;
+}
+
+.treatment-header-lower-text{
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.treatment-list-line{
+    -webkit-columns: 3 150px;
+    -moz-columns: 3 150px;
+    columns: 3 150px;
+    -webkit-column-gap: 5em;
+    -moz-column-gap: 5em;
+    column-gap: 5em;
+    -webkit-column-rule-width: 4px;
+    -moz-column-rule-width: 4px;
+    column-rule-width: 4px;
+    -webkit-column-rule-color: #4f5e86;
+    -moz-column-rule-color: #4f5e86;
+    column-rule-color: #4f5e86;
+    margin: 0.2em auto 2em;
+}
+
+  .treatment-list-line-dotted {
+    -webkit-column-rule-style: dotted;
+    -moz-column-rule-style: dotted;
+    column-rule-style: dotted;
+  }
+  
+  .treatment-list-line-dashed {
+    -webkit-column-rule-style: dashed;
+    -moz-column-rule-style: dashed;
+    column-rule-style: dashed;
+  }
+  
+  .treatment-list-line-solid {
+    -webkit-column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    column-rule-style: solid;
+  }
+
+  .treatment-list p{
+      text-align: center;
+      font-size: 1.3em;
+      color: var(--blue);
+      text-transform: capitalize;
+  }
+
+  .treatment-call-section{
+      background-color: var(--blue);
+      color: white;
+      padding-top: 2em;
+      padding-bottom: 2em;
+  }
+
+  .treatment-call-banner-text{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 2em;
+  }
+
+  .treatment-call-banner h3 {
+    font-size: 1.5em;
+}
+
+.treatment-call-banner span {
+font-size: 1.2em;
+}
+
+.treatment-call-banner .text-right {
+    color: gold;
+}
+.treatment-call-banner h4{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .treatment-header-lower-text{
+        text-align: justify;
+    }
+ }
+
+/* Treatment Resources Page End */
+
+/* Tough Love Page Start */
+.tl-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 650px; */
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.tl-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    /* padding: 2em; */
+    text-align: center;
+}
+
+.tl-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+/* .tough-love h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--blue);
+    margin-bottom: 0.5em;
+} */
+
+.tough-love-section{
+    background-color: rgba(102, 92, 194, 0.678);
+    padding-top: 4em;
+    padding-bottom: 4em;
+    color: white;
+}
+
+.tough-love h5{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.tl-note-section{
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+.tl-quote h3{
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 1em;
+    font-weight: 600;
+}
+
+.overlay{
+    background-color: rgba(20, 19, 19, 0.671);
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 10px;
+}
+
+.tl-quote-section{
+    background-image: url("../images/walk.jpg");
+    position: relative;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 650px; */
+    /* height: 450px; */
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.tl-recognision-header{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.tl-recognision-header h3{
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.tl-recognision-mid{
+    font-size: large;
+}
+
+.tl-recognision-end p{
+    text-align: center;
+    font-size: large;
+}
+/* Tough Love Page End */
+
+/* Family Therapy Program Start */
+.ftp-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 650px; */
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.ftp-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.ftp-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.ftp-information-head{
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+/* Family Therapy Program End */
+
+/* Admission Page Start */
+.admission-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 650px; */
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.admission-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.admission-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+.admission-call-section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: #614385;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+.admission-call-header h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+.admission-log h3,
+.admission-header h3,
+.permited-items-section h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.admission-call-header > h5{
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.admission-info-section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: rgba(236, 234, 234, 0.479);
+}
+.admission-log-section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.admission-info-note p{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 1.2em;
+}
+.admission-info-list h5{
+    font-size: 1.3em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.admission-info-list .card-title{
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+.admission-info-list .card-body{
+    color: var(--darkBlue);
+}
+
+.permited-items-section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.permited-items-section h3{
+    margin-bottom: 0.8em;
+}
+
+.two-column-line{
+    -webkit-columns: 2 150px;
+    -moz-columns: 2 150px;
+    columns: 2 150px;
+    -webkit-column-gap: 5em;
+    -moz-column-gap: 5em;
+    column-gap: 5em;
+    -webkit-column-rule-width: 4px;
+    -moz-column-rule-width: 4px;
+    column-rule-width: 4px;
+    -webkit-column-rule-color: #4f5e86;
+    -moz-column-rule-color: #4f5e86;
+    column-rule-color: #4f5e86;
+    margin: 0.2em auto 2em;
+}
+
+  .list-line-dotted {
+    -webkit-column-rule-style: dotted;
+    -moz-column-rule-style: dotted;
+    column-rule-style: dotted;
+  }
+  
+  .list-line-dashed {
+    -webkit-column-rule-style: dashed;
+    -moz-column-rule-style: dashed;
+    column-rule-style: dashed;
+  }
+  
+  .list-line-solid {
+    -webkit-column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    column-rule-style: solid;
+  }
+
+/* Admission Page End */
+
+/* Family Page Start */
+.family-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/walk.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.family-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.family-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.family-healing-section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.family-healing-header{
+    text-align: center;
+}
+
+.family-healing-header h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.family-healing-header h5{
+    font-size: 1.5em;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+.family-desc > p{
+    font-size: 1.2em;
+}
+/* Family Page End */
+
+/* Footer Section */
+
+.footer-section {
+    position: relative;
+    background-color: var(--darkBlue);
+    color: white;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+.footer-widget {
+    margin-top: 1em;
+}
+
+.footer-widget h3 {
+    margin-bottom: 0.8em;
+}
+
+.footer-widget-content h5 {
+    font-size: 14px;
+}
+
+.footer-widget-content span {
+    margin-right: 10px;
+}
+
+.opening-time {
+    margin: 0;
+    padding: 0;
+}
+
+.opening-time li {
+    list-style: none;
+    line-height: 0.7em;
+    font-size: 14px;
+}
+
+.opening-time span {
+    float: left;
+    padding-right: 10px;
+}
+
+.opening-time .fa-times {
+    color: red;
+}
+
+.opening-time strong {
+    color: red;
+}
+
+.footer-address p {
+    line-height: 10px;
+    margin-bottom: 0.5em;
+}
+
+.footer-address p:last-child {
+    padding-left: 1.6em;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.footer-contact p {
+    line-height: 10px;
+    margin-bottom: 0.5em;
+}
+
+.footer-widget-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contact p:last-child {
+    padding-left: 1.6em;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.footer-rights-section hr {
+    color: white;
+    background-color: white;
+    width: 80%;
+    margin-top: 2em;
+}
+
+.footer-rights {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.footer-rights h6 {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { ... }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
