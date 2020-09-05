@@ -865,6 +865,14 @@ a.wrimagecard:hover,
 .council-container p {
     font-size: 1.2em;
     font-weight: bold;
+    text-align: center;
+}
+
+.council-benefit-list li{
+    font-size: 1.1em;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    color: var(--darkBlue);
 }
 
 /* Counciling Page End */
@@ -1402,11 +1410,19 @@ font-size: 1.2em;
     font-size: 3em;
 }
 
-.ftp-information-head{
+.ftp-header-section{
+    background-color: #4291A4;
+    color: white;
     text-align: center;
     padding-top: 3em;
     padding-bottom: 3em;
 }
+
+.ftp-information{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
 /* Family Therapy Program End */
 
 /* Admission Page Start */
@@ -1615,7 +1631,118 @@ font-size: 1.2em;
 .family-desc > p{
     font-size: 1.2em;
 }
+
+.family-call-banner{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #4291A4;
+    color: white;
+}
+
+.family-banner-left p{
+    font-size: 2em;
+}
+
+.family-banner-right{
+    text-align: right;
+    color: gold;
+    font-size: 1.6em;
+}
+.family-banner-right p{
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    text-transform: uppercase;
+}
 /* Family Page End */
+
+/* Group Therapy Page Start */
+.gt-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/walk.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    margin-top: 9em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.gt-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.gt-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.gt-desc{
+    /* background: rgb(255,255,255);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 56%, rgba(10,158,209,0.7539390756302521) 100%);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 56%, rgba(10,158,209,0.7539390756302521) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 56%, rgba(10,158,209,0.7539390756302521) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#0a9ed1",GradientType=1); */
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.gt-desc-header{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.gt-desc-list{
+background-color: rgba(173, 216, 230,1);
+}
+
+.gt-desc-list > p:first-child {
+    font-size: 200%;
+    font-weight: 600;
+    color: var(--blue);
+    margin-bottom: 0.1em;
+}
+
+.gt-quote-section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.gt-quote-section p {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.gt-quote-section blockquote > p{
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: normal;
+}
+
+/* Group Therapy Page End */
 
 /* Footer Section */
 
