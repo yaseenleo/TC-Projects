@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: Poppins;
+    font-family: var(--muli);
 }
 
 .flex-center {
@@ -230,6 +230,11 @@ body {
     margin-right: 1.2em;
 }
 
+.slider-two li{
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     .slide-text-area{
@@ -376,10 +381,20 @@ body {
     background-position: center;
     background-size: cover;
     padding: 0px;
-    z-index: -1;
+    z-index: 1;
     color: white;
     position: relative;
     display: block;
+}
+
+.stats-section .overlay{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(68, 67, 67, 0.363) !important;
 }
 
 .stats-text {
@@ -402,7 +417,7 @@ body {
 }
 
 .service-header>h2 {
-    font-size: 2em;
+    font-size: 3em;
     color: var(--blue);
     font-weight: 600;
 }
@@ -583,7 +598,6 @@ a.wrimagecard:hover,
     width: 100%;
     /* height: 650px; */
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -705,7 +719,6 @@ a.wrimagecard:hover,
     width: 100%;
     /* height: 650px; */
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -804,7 +817,7 @@ a.wrimagecard:hover,
     font-weight: 600;
     text-transform: capitalize;
     color: rgb(37, 36, 36);
-    text-align: center;
+    text-align: left;
 }
 
 .phil-purpose-section li{
@@ -859,7 +872,6 @@ a.wrimagecard:hover,
     width: 100%;
     /* height: 650px; */
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -923,7 +935,6 @@ a.wrimagecard:hover,
     background-repeat: no-repeat;
     width: 100%;
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1018,7 +1029,6 @@ a.wrimagecard:hover,
     background-repeat: no-repeat;
     width: 100%;
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1160,7 +1170,6 @@ a.wrimagecard:hover,
     width: 100%;
     /* height: 650px; */
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1311,7 +1320,6 @@ font-size: 1.2em;
     width: 100%;
     /* height: 650px; */
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1336,15 +1344,6 @@ font-size: 1.2em;
     text-align: center;
     font-size: 3em;
 }
-
-/* .tough-love h3{
-    font-size: 2em;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-underline-position: under;
-    color: var(--blue);
-    margin-bottom: 0.5em;
-} */
 
 .tough-love-section{
     background-color: rgba(102, 92, 194, 0.678);
@@ -1387,7 +1386,6 @@ font-size: 1.2em;
     width: 100%;
     /* height: 650px; */
     /* height: 450px; */
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1426,7 +1424,6 @@ font-size: 1.2em;
     width: 100%;
     /* height: 650px; */
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1476,7 +1473,6 @@ font-size: 1.2em;
     width: 100%;
     /* height: 650px; */
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1585,7 +1581,6 @@ font-size: 1.2em;
     background-repeat: no-repeat;
     width: 100%;
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1671,7 +1666,6 @@ font-size: 1.2em;
     background-repeat: no-repeat;
     width: 100%;
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1760,7 +1754,6 @@ background-color: rgba(173, 216, 230,1);
     background-repeat: no-repeat;
     width: 100%;
     height: 450px;
-    margin-top: 9em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1810,11 +1803,6 @@ background-color: rgba(173, 216, 230,1);
 }
 
 .et-council-program-sec{
-    /* background: hsla(179, 67%, 80%, 1);
-    background: linear-gradient(180deg, hsla(179, 67%, 80%, 1) 0%, hsla(212, 69%, 72%, 1) 100%);
-    background: -moz-linear-gradient(180deg, hsla(179, 67%, 80%, 1) 0%, hsla(212, 69%, 72%, 1) 100%);
-    background: -webkit-linear-gradient(180deg, hsla(179, 67%, 80%, 1) 0%, hsla(212, 69%, 72%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#a9eeed", endColorstr="#86b4e9", GradientType=1 ); */
     background-color: #B6E2D3;
     color: rgb(70, 39, 39);
     padding-top: 2em;
@@ -1864,6 +1852,176 @@ background-color: rgba(173, 216, 230,1);
     text-align: center;
 }
 /* Effective Treatment Page End */
+
+/* contact page */
+
+.cp-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/office.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 650px; */
+    height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.cp-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    /* padding: 2em; */
+    text-align: left;
+}
+
+.cp-banner-text h2{
+    text-align: left;
+    font-size: 3em;
+}
+
+
+.cp-banner .overlay{
+    width: 100%;
+    height:100%;
+    background-color: rgba(66, 65, 65, 0.582) !important;
+}
+
+.cp-touch h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-align: center;
+    color: var(--blue) ;
+}
+
+.cp-address h2, .cp-reason h3{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-align: center;
+    color: var(--blue) ;
+}
+
+.cp-address .card-img-top{
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.cp-address .card-title > address{
+    font-size: 0.7em;
+}
+
+.cp-address .card-title > a{
+    text-decoration: none;
+    color: var(--darkBlue);
+    font-size: 1em;
+}
+
+
+.cp-address .card-body{
+    text-align: center;
+}
+
+
+.cp-touch h4{
+    font-size: 1.3em;
+}
+
+.contact {
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+}
+
+.contact h1,
+.contact h2,
+.contact h3,
+.contact h4,
+.contact h5,
+.contact h6 {
+    color: #3e4555;
+}
+
+.contact .font-weight-medium {
+    font-weight: 500;
+}
+
+.contact .form-control {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.contact .form-control:focus {
+    border-color: #ffffff;
+}
+
+.contact input::-webkit-input-placeholder,
+.contact textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact input:-ms-input-placeholder,
+.contact textarea:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact .right-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: block;
+    margin: 0px auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contact.bg-info {
+    background-color: #188ef4 !important;
+}
+
+.contact .text-inverse {
+    color: #3e4555 !important;
+}
+
+@media (min-width: 1024px) {
+    .contact .contact-box {
+        padding: 80px 105px 80px 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact .contact-box {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .contact .right-image {
+        position: relative;
+        bottom: -95px;
+    }
+}
+
+/* contact page end */
 
 /* Footer Section */
 

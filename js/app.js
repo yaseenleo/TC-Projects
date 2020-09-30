@@ -1,21 +1,21 @@
 
-console.log(window.pageYOffset)
+// console.log(window.pageYOffset)
 
-var previousScrollPos = window.pageYOffset;
-console.log(previousScrollPos)
-window.onscroll = function() {
-    var currentScroll = window.pageYOffset;
-    if(previousScrollPos > currentScroll ) {
-        document.getElementById("header").style.top = "0"
-    }
-    else{
-        document.getElementById("header").style.top = "-137px"
-    }
-    // console.log(previousScrollPos)
-    // console.log(currentScroll)
-    // console.log(previousScrollPos = currentScroll)
-    previousScrollPos = currentScroll
-}
+// var previousScrollPos = window.pageYOffset;
+// console.log(previousScrollPos)
+// window.onscroll = function() {
+//     var currentScroll = window.pageYOffset;
+//     if(previousScrollPos > currentScroll ) {
+//         document.getElementById("header").style.top = "0"
+//     }
+//     else{
+//         document.getElementById("header").style.top = "-137px"
+//     }
+//     // console.log(previousScrollPos)
+//     // console.log(currentScroll)	
+//     // console.log(previousScrollPos = currentScroll)
+//     previousScrollPos = currentScroll
+// }
 
 
 var swiper = new Swiper('.swiper-container', {
