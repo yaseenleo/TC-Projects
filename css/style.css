@@ -149,11 +149,11 @@ body {
     transition: 0.2s;
 }
 
-.dropdown-item{
+/* .dropdown-item{
     word-break: break-all;
     word-wrap: break-word;
     white-space: pre-wrap;
-}
+} */
 
 .dropdown-item.active,
 .dropdown-item:active {
@@ -188,7 +188,6 @@ body {
     width: 100%;
     height: 500px;
     z-index: -1;
-    margin-top: 7em !important;
 }
 
 .swiper-slide {
@@ -1274,8 +1273,8 @@ a.wrimagecard:hover,
   }
 
   .treatment-call-banner-text{
-    text-align: center;
-    font-size: large;
+    text-align: justify;
+    font-size: 1.2em;
     margin-bottom: 2em;
   }
 
@@ -1851,7 +1850,162 @@ background-color: rgba(173, 216, 230,1);
     text-underline-position: under;
     text-align: center;
 }
+
+.et-header h2{
+    font-size: 220%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 0.5em;
+}
 /* Effective Treatment Page End */
+
+/* Family Recovery Page Start */
+
+.fc-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/walk.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.fc-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.fc-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.family-recovery-section h2, .fr-next-section h2{
+    font-size: 220%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.family-recovery-section p, .family-recovery-section ul> li,
+.fr-next-section h6{
+    font-size: 1.2em;
+}
+
+.family-recover-image > img{
+    border-radius: 5px;
+}
+
+/* Family Recovey Page End */
+
+/* 12 step facilitation Page Start */
+
+.facilitation-banner{
+    position: relative;
+    display: block;
+    background-image: url("../images/walk.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.facilitation-banner-text{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.facilitation-banner-text h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.facilitation-section{
+    background-color: aliceblue;
+    color: var(--darkBlue);
+}
+
+.facilitation-section p{
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.offer-header h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-align: center;
+    color: var(--blue);
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.facilitation-offer-section .nav-tabs .nav-item{
+    background-color: #659ccfa8;
+    border-bottom: none;
+    height: 3.8em;
+}
+
+.facilitation-offer-section .nav-tabs .nav-item .nav-link{
+    color: white;
+    font-size: 1.2em;
+    height: 3.2em;
+}
+
+.facilitation-offer-section .nav-tabs .nav-item .nav-link.active{
+    color: var(--blue);
+    font-size: 1.2em;
+}
+
+.facilitate-heading h3{
+    font-size: 2.4em;
+}
+
+.facilitate-text p{
+    font-size: 1.2em;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.offer-heading {
+    color: var(--blue);
+}
+
+.offer-body p{
+    font-size: 1.2em;
+}
+/* 12 step facilitation Page End */
 
 /* contact page */
 
